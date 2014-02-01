@@ -9,7 +9,7 @@ function logMock() {
 function soapMockResult() {
     "use strict";
 
-    var sMock =  "<pre>" +
+    var sMock =  "<pre class='syntax brush-xml'>" +
             "&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;" +
             "xmlns:seb=&quot;http://www.tieto.com/cmw/tcm/sebaccount&quot;" +
             " xmlns:tcm=&quot;http://www.tieto.com/cmw/tcm/&quot;&gt;  </br>" +
@@ -48,5 +48,7 @@ $(document).ready(function() {
     $("#do-transform").click(function() {
         console.log("Commence Transform was clicked");
         $("#SoapMsg").append(log2Soap($("#LogTxt").val()));
+        $.syntax();
     });
+    $.syntax();
 });

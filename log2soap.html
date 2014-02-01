@@ -91,16 +91,25 @@
                     Paste you log text with params in textarea above  and click transform button.
                   </span>                 
             </div>
-            
-<!--  --><div class="row">&nbsp;</div> 
+         </div>   
+<!--  -->
+<div class="row">&nbsp;
+</div> 
              <div class="row">
-                 <div class=>
+                 
                     <a class="btn btn-default" href="#" id="do-transform">Transform</a>
-                     </div>
+                     
         </div>
-            <div class=>
+            <div class="row">
                <h2>Soap message</h2>
-                <div class="col-xs-12" id="SoapMsg"></div>
+                <div class="col-xs-12" id="SoapMsg">
+                    <pre class='syntax brush-xml'>
+                        &lt;tags&gt;
+                        &lt;tagit&gt;IamTaggin&lt;/tagit&gt;
+                        &lt;tagit&gt;IamTaggin2&lt;/tagit&gt;
+                        &lt;/tags&gt;
+                    </pre>
+                </div>
             </div>
         </div>
         <hr>
@@ -116,6 +125,8 @@
     </script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jQuery.syntax.min.js"></script>
+    <script src="js/vendor/jQuery.syntax.cache.js"></script>
 
     <script src="js/main.js"></script>
 </body>
