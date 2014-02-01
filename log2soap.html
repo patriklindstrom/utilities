@@ -80,19 +80,39 @@
   
 
     <div class="container">
+        <div class="span12">
         <!-- Example row of columns -->
+        <form>
+        <fieldset>
         <div class="row">
-            <div class="col-lg-6">
+            <div >
                 <h2>AppLog file parameter part</h2>
-                <textarea id="LogTxt"></textarea>
+                 <div class="clearfix">
+                     <div class="input">
+                    <textarea id="LogTxt" name="LogTxt" rows="10" class="col-xs-12">
+Verbose; 2014-01-21 14:12:30.454; Added Parameters ;rErrorCode = 0 ;oExtErrorPosReference = NULL ;ioAccountId = 1000120880 ;ioCurrencyId = SEK ;ioCurrencySpread = NULL ;ioTradeDay = 20140121 ;ioExtChannelId = EPC ;ioExtUser = S43253 ;ioExtId = DX0021T ;ioRegUser = standard ;ioRegToken = 0 ;ioRegInterface = ONL ;ioClientRowVersion = NULL ;iLanguageId = 41D ;iExtPosReference = NULL ;oCreatedDate = NULL ;oRegDate = 2014-01-21 14:12:29
+                    </textarea>
+                     <span class="help-block">
+                    Paste you log text with params in here
+                  </span>
+                   </div> 
+                </div>
             </div>
+            <div class="clearfix">
+            <label for="disabledInput">Disabled textarea</label>
+            <div class="input">
+                <div class="clearfix">
+              <textarea class="col-xs-12" name="textarea" id="textarea" rows="3" disabled></textarea>
+          </div>
+            </div>
+          </div><!-- /clearfix -->
 <!--  --><div class="row">&nbsp;</div> 
              <div class="row">
-                 <div class="col-lg-6">
+                 <div class=>
                     <a class="btn btn-default" href="#" id="do-transform">Transform</a>
                      </div>
         </div>
-            <div class="col-lg-6">
+            <div class=>
                <h2>Soap messag</h2>
                 <div id="SoapMsg"></div>
             </div>
@@ -100,7 +120,9 @@
         </div>
 
         <hr>
-
+         </fieldset>
+             </form>
+</div>
         <footer>
             <p>&copy; LCube Patrik Lindstr&ouml;m 2014</p>
         </footer>
