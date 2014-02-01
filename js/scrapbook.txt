@@ -1,0 +1,24 @@
+&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:seb=&quot;http://www.tieto.com/cmw/tcm/sebaccount&quot; xmlns:tcm=&quot;http://www.tieto.com/cmw/tcm/&quot;&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;seb:OverviewAccountGet&gt;
+         &lt;seb:inputDTO&gt;
+            &lt;seb:SEBOverviewAccountSet&gt;
+               &lt;seb:AccountId&gt;1000120880&lt;/seb:AccountId&gt;
+               &lt;seb:CurrencyId&gt;SEK&lt;/seb:CurrencyId&gt;
+               &lt;seb:TradeDay&gt;20140121&lt;/seb:TradeDay&gt;
+            &lt;/seb:SEBOverviewAccountSet&gt;
+          &lt;seb:InputContext&gt;
+               &lt;tcm:ExtChannelId&gt;EPC&lt;/tcm:ExtChannelId&gt;
+               &lt;tcm:ExtId&gt;DX0021T&lt;/tcm:ExtId&gt;
+               &lt;tcm:ExtUser&gt;s47368&lt;/tcm:ExtUser&gt;
+               &lt;tcm:LanguageId&gt;41D&lt;/tcm:LanguageId&gt;
+            &lt;/seb:InputContext&gt;
+         &lt;/seb:inputDTO&gt;
+      &lt;/seb:OverviewAccountGet&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+
+jslint:main.js:4:1:Missing 'use strict' statement.
+jslint:main.js:1:1:Use the function form of 'use strict'
+jslint:main.js:35:12:Missing 'new'.
