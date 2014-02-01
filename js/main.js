@@ -40,6 +40,4 @@ $( document ).ready(function() {
     console.log( "Commence Transform was clicked" );
     $("#SoapMsg").append(Log2Soap( $("#LogTxt").val()));
 });
-
-
 });
