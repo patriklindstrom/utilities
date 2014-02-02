@@ -54,9 +54,9 @@ function getNs(item) {
 }
 function getXmlTag(item, myregexp) {
     "use strict";
-    var tag = getXmlPart(item, myregexp, 3),
-        value = getXmlPart(item, myregexp, 4),
-        ns = getNs(getXmlPart(item, myregexp, 2)),
+    var tag = getXmlPart(item, myregexp, 2),
+        value = getXmlPart(item, myregexp, 3),
+        ns = getNs(getXmlPart(item, myregexp, 1)),
         rXmlTag = "&lt;" + ns + tag + "&gt" + value + "&lt;/" + tag + "&gt";
     return rXmlTag;
 }
@@ -76,10 +76,11 @@ function log2Soap(logtxt) {
         log2SRet,
         len = retArr.length,
         i;
-
+    log2SRet = getTopSoap();
     for (i = len - 1; i >= 0; i -= 1) {
-        log2SRet = log2SRet + retArr[i] + " -- Turkey -- ";
+        log2SRet = log2SRet + getXmlTag(retArr[i], myregexp) + " <br> ";
     }
+     log2SRet = log2SRet + getBottomSoap();
     return log2SRet;
 
 }
