@@ -1,3 +1,8 @@
 # robotstxt.org/
-
+# There is nothing here. Just my own developer utitiles.
 User-agent: *
+Disallow: /
+Disallow: /img
+Disallow: /js
+Disallow: /css
+Disallow: /fonts

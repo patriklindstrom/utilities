@@ -2,14 +2,14 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    <name> -- <role> -- <twitter>
-
+Name: Patrik Lindström 
+Role: Developer
+Twitter: @LindstromPatrik
+Site: http://www.lcube.se
 # THANKS
 
-    <name>
+    Jane my wife
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    HTML5, CSS3, jQuery, Bootstrap, Javascript
